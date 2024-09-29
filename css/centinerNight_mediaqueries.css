@@ -86,6 +86,9 @@
 
 
 @media all and (max-width:767px) {
+    body:before {
+        background-image: url(../img/bg_home-mobile_744px.png);
+    }
     .container {
         max-width: 480px;
     }
@@ -161,7 +164,7 @@
 }
 
 @media all and (max-width:479px) {
-    body {
+    body:before {
         background-image: url(../img/bg_mobile_390px.png);
         overflow-x: hidden;
     }
