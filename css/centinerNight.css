@@ -1,0 +1,297 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+@import url('https://webfontworld.github.io/heiroflight/HeirofLight.css');
+
+:root {
+    --nanum: "Nanum Myeongjo";
+    --heiro: 'HeirofLight';
+}
+
+/* 공통 */
+* {word-break: keep-all;}
+body {
+    background: url(../img/bg_body.png) no-repeat fixed center;
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+section {
+    text-align: left;
+    width: calc(100% - 7.5rem); margin: 6.25rem auto 3.125rem;}
+
+h2 {
+    font-size: 1.875rem;
+    margin-bottom: 2.5rem;
+}
+a {
+    text-align: center;
+    line-height: 1.6;
+    transition: 0.2s;
+}
+.gray {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.875rem;
+    display: block;
+}
+
+/* mainPage */
+.mainPage {
+    text-align: left;
+    height: 100vh;
+    padding: 0 3.75rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contents {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* 폴라로이드 */
+.polaroid {
+    width: 17.5rem;
+    background: #fff;
+    box-shadow: -4px 4px 5px rgba(0, 0, 0, 0.2);
+    margin: 0 7.5rem;
+    padding: 1.25rem;
+    box-sizing: border-box;
+    transform: rotate(-10deg);
+}
+
+.polaroid figure {
+    width: 100%;
+    background: no-repeat center / cover;
+}
+
+.polaroid #jyPhoto {
+    width: 100%;
+    height: 17.5rem;
+    background-image: url(../img/kjy.JPEG);
+}
+.polaroid #typo {
+    background-image: url(../img/mainTypo01.png);
+    height: 2.5rem;
+    background-size: 50%;
+    background-position: left 1.25rem top;
+}
+.polaroid #typo2 {
+    background-image: url(../img/mainTypo02.png);
+    height: 2.75rem;
+    background-size: 50%;
+    background-position: right 1.25rem top;
+}
+
+.mainTextArea {
+    position: relative;
+    width: 38.625rem; 
+    overflow: hidden;
+    padding: 9rem 5.625rem;
+    box-sizing: border-box;
+    color: #000;
+}
+.mainTextArea > img {
+    position: absolute;
+    top: 50%; left: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+    aspect-ratio: 4/3;
+    width: 100%;
+}
+.mainTextArea > p {
+    font-weight: 200;
+    margin-bottom: 0.5rem;
+}
+.mainTextArea h1 {
+    font-family: var(--nanum);
+    font-size: 1.875rem;
+    margin-bottom: 1.25rem;
+    color: #000;
+}
+
+.mainTextArea .infoArea {
+    display: flex;
+    justify-content: space-between;
+}
+.infoArea .left, .infoArea .right {
+     width: 46%;
+}
+.infoArea p {
+    line-height: 2rem;
+    font-weight: 500;
+}
+.infoArea p:nth-child(2) {
+    display: inline-block;
+}
+.infoArea span {
+    display: block;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+.infoArea .btnArea {
+    text-align: center;
+}
+.infoArea a {
+    background: #bed5ff;
+    border-radius: 1.25rem;
+    font-size: 0.875rem;
+    padding: 8px 12px;
+    display: inline-block;
+    transition: 0.3s;
+}
+.infoArea a:hover {
+    background: #53b7ff;
+    color: #fff;
+}
+.mainPage .contents > .btnArea {
+    margin-top: 50px;
+    display: flex;
+}
+.mainPage .contents > .btnArea a {
+    display: flex;
+    align-items: center;
+    background: #d6f6ff;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #000;
+    border-radius: 1.25rem;
+    padding: 1.25rem 1.875rem;
+    margin: 0 10px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(68, 165, 255, 0.448);
+}
+.mainPage > .btnArea a:hover {
+    background: #53b7ff;
+    color: #fff;
+}
+
+/* programArea */
+#programArea table {
+    width: 100%;
+    background: #ffffff7d;
+    margin-bottom: 6.25rem;
+}
+table th:nth-child(1) {border-right: 1px solid #ffffff88;}
+table th {
+    text-align: center;
+    padding: 1rem;
+    background: #53b7ff;
+    color: #fff;
+}
+table td {
+    line-height: 1.6;
+    text-align: center;
+    border: 1px solid #53b7ffd0;
+    padding: 1.25rem 1.25rem;
+    font-size: 1.25rem;
+}
+table td:nth-child(1),
+table td:nth-child(3) {
+    background: #53b7ff39;
+    font-weight: 500;
+}
+table a, .link {
+    text-decoration: underline;
+    color: #3686ee;
+}
+table span {
+    display: block;
+    color: #ff7b53;
+    font-size: 0.875rem;
+}
+
+/* programInfo */
+.blue {
+    color: #ff7b53; font-weight: 500;}
+.programInfo {
+    margin-bottom: 3.75rem;
+}
+.programInfo h3, #needsInfo h2 {
+    padding: 0 2.5px;
+    font-size: 1.625rem;
+}
+.programInfo .program {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.programInfo .program, #needsInfo ul {
+    width: 100%;
+    margin: 2.5rem auto;
+    background: rgba(255,255,255,0.8);
+    padding: 2.5rem;
+    box-sizing: border-box;
+    border-radius: 3.125rem;
+    box-shadow: 0 0 10px rgba(68, 165, 255, 0.448);
+}
+.program .programTitle {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.875rem;
+}
+.program p, #needsInfo li {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+#needsInfo li {
+    list-style: disc;
+    margin-left: 1.25rem;
+    font-weight: 500;
+    font-size: 1.125rem;
+    margin-bottom: 1.25rem;
+}
+#needsInfo li span {
+    margin: 5px 0;
+}
+.program .gray, #needsInfo .gray {
+    display: block;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.program iframe {
+    margin-bottom: 10px;
+    width: 100%;
+}
+.program .video, .video+.programTextArea{
+    width: 48%;
+}
+.program .video p {
+    line-height: 1.25rem;
+}
+.program .desc {
+    font-size: 14px;
+    color: #00000061;
+}
+
+.container > a {
+    margin: 0 auto 100px;
+    background: #d6f6ff;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    border-radius: 1.25rem;
+    padding: 1.25rem 2.5rem;
+    box-sizing: border-box;
+    display: inline-block;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(68, 165, 255, 0.448);
+}
+.container > a:hover {
+    background: #53b7ff;
+    color: #fff;
+}
+
+/* footer */
+footer {
+    color: rgba(0, 0, 0, 0.6);
+    padding: 2.5rem 0;
+}
