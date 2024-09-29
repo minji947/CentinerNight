@@ -9,6 +9,9 @@
 
 /* 공통 */
 * {word-break: keep-all;}
+body {
+    position: relative;
+}
 .allBg {
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
@@ -171,7 +174,7 @@ a {
     transition: 0.3s;
     box-shadow: 0 0 10px rgba(68, 165, 255, 0.448);
 }
-.mainPage > .btnArea a:hover {
+.mainPage .contents > .btnArea a:hover {
     background: #53b7ff;
     color: #fff;
 }
