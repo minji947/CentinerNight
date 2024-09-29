@@ -186,18 +186,21 @@ a {
 
 /* programArea */
 #programArea table {
+    box-sizing: border-box;
     width: 100%;
     background: #ffffff7d;
     margin-bottom: 6.25rem;
 }
 table th:nth-child(1) {border-right: 1px solid #ffffff88;}
 table th {
+    width: 50%;
     text-align: center;
     padding: 1rem;
     background: #53b7ff;
     color: #fff;
 }
 table td {
+    width: 35%;
     line-height: 1.6;
     text-align: center;
     border: 1px solid #53b7ffd0;
@@ -206,6 +209,7 @@ table td {
 }
 table td:nth-child(1),
 table td:nth-child(3) {
+    width: 15%;
     background: #53b7ff39;
     font-weight: 500;
 }
