@@ -9,8 +9,11 @@
 
 /* 공통 */
 * {word-break: keep-all;}
-body {
-    background: url(../img/bg_body.png) no-repeat fixed center;
+.allBg {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: -99;
+    background: url(../img/bg_body.png) no-repeat fixed left 70% center;
     background-size: cover;
 }
 

@@ -130,6 +130,9 @@ table td {
 }
 
 @media all and (max-width:479px){
+    body {
+        background-size: contain;
+    }
     .container {
         max-width: 350px;
     }
@@ -199,6 +202,7 @@ table td {
     }
    
     table {
+        width: 100%;
         margin-bottom: 1rem;
     }
     table td {
