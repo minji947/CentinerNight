@@ -24,6 +24,9 @@ body:before {
     -o-background-size: cover;
     background-size: cover;
   }
+.fadeIn {
+    opacity: 0;
+}
 
 .container {
     text-align: center;
